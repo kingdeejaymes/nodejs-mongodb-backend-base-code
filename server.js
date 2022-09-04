@@ -6,7 +6,7 @@ require('dotenv').config();
 
 var corsOptions = {
   //origin: "http://localhost:3000"
-  origin: "https://63151165ea02943d2cf61758--shiny-maamoul-fbdfa7.netlify.app/"
+  origin: "https://63151165ea02943d2cf61758--shiny-maamoul-fbdfa7.netlify.app"
 
 };
 app.use(cors(corsOptions));
