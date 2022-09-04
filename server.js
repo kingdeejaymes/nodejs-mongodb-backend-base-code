@@ -4,12 +4,12 @@ const app = express();
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-var corsOptions = {
-  //origin: "http://localhost:3000"
-  origin: "https://63151165ea02943d2cf61758--shiny-maamoul-fbdfa7.netlify.app"
+// var corsOptions = {
+//   //origin: "http://localhost:3000"
+//   origin: "https://63151165ea02943d2cf61758--shiny-maamoul-fbdfa7.netlify.app"
 
-};
-app.use(cors(corsOptions));
+// };
+// app.use(cors(corsOptions));
 // parse requests of content-type - application/json
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "NodeJS Backend" });
+  res.json({ message: "NodeJS Express Server is Up and Running!!!" });
 });
 
 require("./routes/task.route")(app);
