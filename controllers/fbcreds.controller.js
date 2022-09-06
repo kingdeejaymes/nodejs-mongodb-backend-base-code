@@ -26,7 +26,7 @@ exports.saveCredentials = (req, res) => {
 // Retrieve all FB Credentials from the database.
 exports.getAll = (req, res) => {
 
-    Task.find()
+    FBCreds.find()
     .then(data => {
       res.send(data);
     })
