@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
 });
 
 require("./routes/task.route")(app);
+require("./routes/fbcreds.route")(app);
 
 try {
     // set port, listen for requests
